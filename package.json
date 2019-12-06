@@ -1,0 +1,15 @@
+{
+  "name": "ru-population-density",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-simple-maps": "^0.12.1"
+  }
+}
