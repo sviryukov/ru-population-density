@@ -17,7 +17,7 @@ const Map = () => {
                             stroke='#fff'
                             projection={projection}
                             geography={geo}
-                            fill={geo.properties.fill}
+                            fill={geo.properties.uniqueColor}
                         />
                     );
                 })}
