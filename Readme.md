@@ -1,6 +1,6 @@
 ## Population density of federal subjects of Russia visualizing web app
  
-#### [Demo](http://miptmentors-new.jcloud.kz:8080/)
+#### [Demo](http://tests.jelastic.regruhosting.ru/)
 
 #### Stack: node.js, express.js, React.js, styled-components, [React Simple Maps](https://www.react-simple-maps.io/) 
 
