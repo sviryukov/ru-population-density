@@ -1,12 +1,14 @@
 ## Population density of federal subjects of Russia visualizing web app
  
-#### [Demo](http://wd.kz)
+#### [Demo](http://ru-population-density.jcloud.kz/)
+
+#### Stack: node.js, express.js, React.js, styled-components, [React Simple Maps](https://www.react-simple-maps.io/) 
 
 ### Data display method
 
-##### 1. Subjects are sorted in order of population density.
+#### 1. Subjects are sorted in order of population density.
 
-##### 2. Subjects are combined into 7 groups by equal logarithmic intarvals:
+#### 2. Subjects are combined into 7 groups by equal logarithmic intarvals:
 
 x - population density of a subject
 <br/>
@@ -27,7 +29,7 @@ X<sub>7</sub> = {x: ln(x) ≥ ln(x<sub>min</sub>) + 6 * delta = d<sub>6</sub>}
 <br/>
 d<sub>1</sub>, d<sub>2</sub>, ..., d<sub>6</sub> - logarithmic breakpoints.
 
-##### 3. Breakpoints initial (not logarithmic) values (e<sup>d<sub>1</sub></sup>, e<sup>d<sub>2</sub></sup>, ...) are rounded to one significant digit, so that group border values look practical and navigation over data is easier. Logarithmic breakpoints are recalculated in accordance with new group border values.
+#### 3. Breakpoints initial (not logarithmic) values (e<sup>d<sub>1</sub></sup>, e<sup>d<sub>2</sub></sup>, ...) are rounded to one significant digit, so that group border values look practical and navigation over data is easier. Logarithmic breakpoints are recalculated in accordance with new group border values.
 
 E.g.:
 <br/>
@@ -44,14 +46,14 @@ d<sub>1-rounded</sub> = ln(0.3) = -1.2039...
 <br/>
 ...
 <br/>
-d<sub>1</sub> = ln(x<sub>min</sub>) + 6 * delta = 6.8824...
+d<sub>6</sub> = ln(x<sub>min</sub>) + 6 * delta = 6.8824...
 <br/>
 e<sup>d<sub>6</sub></sup> = 974.9881...  ->  1000
 <br/>
 d<sub>6-rounded</sub> = ln(1000) = 6.9007...
 
 
-##### 4. Subjects (recombined in accordance with new rounded breakpoints) of the same group are painted in he same color of hue-saturation-value model. Neighbour groups' color values differ by (80/7)%, excluding the last 2 groups: the 6th's value is (100 - 6 * 80 / 7)% and the 7th's value is 0% (for visual contrast reason).
+#### 4. Subjects (recombined in accordance with new rounded breakpoints) of the same group are painted in the same color of hue-saturation-value model. Neighbour groups' color values differ by (80/7)%, excluding the last 2 groups: the 6th's value is (100 - 6 * 80 / 7)% and the 7th's value is 0% (for visual contrast reason).
 
 ### Sources
 
