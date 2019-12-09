@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {ComposableMap, Geographies, Geography} from 'react-simple-maps';
 import {geoConicEqualArea} from "d3-geo";
 import topo from '../data/topo';

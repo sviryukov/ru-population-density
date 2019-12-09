@@ -1,3 +1,4 @@
+import React from 'react';
 import {CloseButton} from "./Close";
 
 const Legend = props => {

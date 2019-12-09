@@ -1,3 +1,5 @@
+import React from 'react';
+
 const CloseButton = () => {
     return (
         <svg viewBox="0 0 24 24" style={{width: '20px', height: '20px'}}>

@@ -1,7 +1,7 @@
-import {useState} from 'react';
-import {Header} from "./components/Header";
-import {Legend} from './components/Legend';
-import {Map} from './components/Map';
+import React, {useState} from 'react';
+import {Header} from "./Header";
+import {Legend} from './Legend';
+import {Map} from './Map';
 
 const COLOR_HUE = 270;
 
@@ -23,4 +23,4 @@ const App = () => {
     );
 };
 
-export default App;
+export {App};
