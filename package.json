@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "d3-geo": "^1.11.9",
-    "react-simple-maps": "^0.12.1"
+    "react-simple-maps": "^0.12.1",
+    "round10": "^1.0.3",
+    "styled-components": "^4.4.1"
   }
 }
